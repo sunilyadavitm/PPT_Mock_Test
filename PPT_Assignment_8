@@ -58,24 +58,72 @@ The Configuration object contains information about the database connection and 
 
 ****Q6.What is HQL?****
 
-Ans.
+Ans. HQL stands for Hibernate Query Language. It is an object-oriented query language that is used to query the database using Hibernate. 
+HQL is similar to SQL, but it uses object-oriented concepts like classes and objects instead of tables and rows.
+
+HQL queries are translated into SQL queries by Hibernate at runtime. HQL supports a wide range of operations like SELECT, INSERT, UPDATE, DELETE, and JOIN.
+
+
 
 
 ****Q7.What are Many to Many associations?****
 
-Ans.
+Ans.Many-to-many associations are associations between two entities where one entity can have multiple instances of the other entity, and vice versa.
+In Hibernate, many-to-many associations are implemented using a join table.
+
+A join table is a table that is used to store the associations between two entities. 
+It contains foreign keys to both entities and is used to map the relationships between them.
+
+In Hibernate, many-to-many associations are represented using the @ManyToMany annotation. 
+The @ManyToMany annotation is used to specify the join table and the columns that are used to map the relationship.
+
+  
 
 
 ****Q8.What is hibernate caching?****
 
-Ans.
+Ans. Hibernate caching is a mechanism that is used to improve the performance of Hibernate applications.
+Caching is the process of storing frequently accessed data in memory so that it can be retrieved quickly when needed.
+
+Hibernate provides two levels of caching:
+
+- First-level cache: It is also known as session cache. It is enabled by default and is used to cache objects within a single Hibernate session.
+The first-level cache is associated with the Session object and is cleared when the session is closed.
+- Second-level cache: It is a shared cache that is used to cache objects across multiple sessions. 
+The second-level cache is not enabled by default and must be configured explicitly.
+
+  
 
 
 ****Q9.What is the difference between first level cache and second level cache?****
 
-Ans.
+Ans. The main difference between the first-level cache and the second-level cache is that the first-level
+cache is associated with a single Hibernate session, while the second-level cache is shared across multiple sessions.
+
+The first-level cache is enabled by default and is used to cache objects within a single Hibernate session.
+The first-level cache is associated with the Session object and is cleared when the session is closed.
+
+The second-level cache is not enabled by default and must be configured explicitly. 
+It is a shared cache that is used to cache objects across multiple sessions. The second-level cache can be used to improve the performance 
+of Hibernate applications by reducing the number of database queries that are executed.
+
+
 
 
 ****Q10.What can you tell about Hibernate Configuration File?****
 
-Ans.
+Ans. The Hibernate Configuration File is an XML file that is used to configure Hibernate. 
+It contains information about the database connection and the mapping between Java classes and database tables.
+
+The Configuration object is used to read the Hibernate Configuration File and create a SessionFactory object. 
+The Configuration object is also used to configure Hibernate's internal state.
+
+The Hibernate Configuration File contains the following information:
+
+- Database connection information: It contains information about the database driver class, the database URL, the username, and the password.
+- Mapping information: It contains information about the mapping between Java classes and database tables.
+- Hibernate properties: It contains various properties that are used to configure Hibernate's internal state.
+
+  
+
+
