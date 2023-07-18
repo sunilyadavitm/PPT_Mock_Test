@@ -1,1 +1,50 @@
+****Q1.What is Spring Framework?****
 
+Ans. The Spring Framework is an open-source Java platform that provides comprehensive infrastructure support for developing Java applications. 
+  It was created to address the complexity of enterprise application development and offers a lightweight container 
+  that manages the lifecycle and configuration of Java objects.
+
+
+****Q2.What are the features of Spring Framework?****
+
+Ans.
+
+
+****Q3.What is a Spring configuration file?****
+
+Ans.
+
+
+****Q4.What do you mean by IoC Container?****
+
+Ans.
+
+
+****Q5.What do you understand by Dependency Injection?****
+
+Ans.
+
+
+****Q6.Explain the difference between constructor and setter injection?****
+
+Ans.
+
+
+****Q7.What are Spring Beans?****
+
+Ans.
+
+
+****Q8.What are the bean scopes available in Spring?****
+
+Ans.
+
+
+****Q9.What is Autowiring and name the different modes of it?****
+
+Ans.
+
+
+**Q10.Explain Bean life cycle in Spring Bean Factory Container.**
+
+Ans.
