@@ -1,47 +1,108 @@
 **Q1.What is the difference between Compiler and Interpreter?**
 
-Ans. 
+Ans. Compiler:
+1.A compiler is a software program that translates the entire source code of a program into machine code or a lower-level representation known as object code.
+2.It analyzes the entire source code, performs syntax and semantic checks, and generates executable code in a separate file or output.
+
+Interpreter:
+1.An interpreter is a software program that directly executes source code line by line without generating a separate executable.
+2.It reads and interprets the source code, translates it into machine code or intermediate code, and executes the instructions one by one.
+
 
 **Q2.What is the difference between JDK, JRE, and JVM?**
 
-Ans. 
+Ans. JDK (Java Development Kit):
+
+1.The JDK is a software development kit that provides the necessary tools, libraries, and executables for Java application development.
+2.It includes the Java compiler (javac) to compile Java source code into bytecode, 
+and other development tools such as debugger (jdb), documentation generator (javadoc), and build tools (like Ant or Maven).
+3.The JDK also includes a complete JRE (Java Runtime Environment) for running Java applications.
+
+JRE (Java Runtime Environment):
+
+1.The JRE is an environment that provides the runtime support for executing Java applications.
+2.It includes the Java Virtual Machine (JVM) and the Java class libraries.
+3.The JRE allows you to run Java applications without the need for any development tools or compilation process.
+4.It is primarily used for executing Java applications on end-user machines or servers.
+
+JVM (Java Virtual Machine):
+
+1.The JVM is a virtual machine that executes Java bytecode.
+2.It is an integral part of the JRE and the JDK.
+3.The JVM is responsible for translating platform-independent Java bytecode into machine code that can be executed by the underlying operating system.
+4.It provides a runtime environment for executing Java applications, including memory management, garbage collection, and runtime security.
 
 
 **Q3.How many types of memory areas are allocated by JVM?**
 
-Ans.
+Ans. JVM (Java Virtual Machine) is an abstract machine that takes Java bytecode and converts it into machine-understandable code. 
+The memory in the JVM is divided into 5 different parts: Class (Method) Area, Heap, Stack, Program Counter Register, and Native Method Stack
 
 
 **Q4.What is JIT compiler?**
 
-Ans.
+Ans.JIT (Just-In-Time) compilation is a technique used by the Java Virtual Machine (JVM) to improve the performance of Java applications. 
+It involves dynamically compiling bytecode into native machine code during runtime, just before the code is executed.
 
 
 **Q5.What are the various access specifiers in Java?**
 
-Ans.
+Ans.In Java, access specifiers (also known as access modifiers) are keywords that determine the accessibility or scope of a field, method, constructor, or class. 
+There are four types of access specifiers in Java: private, default, protected, and public
 
 
 **Q6.What is a compiler in Java?**
 
-Ans.
+Ans. In Java, a compiler is a software program that translates human-readable Java source code into machine-readable bytecode. 
+It converts the Java code written by a developer into a format that can be understood and executed by the Java Virtual Machine (JVM).
+The Java compiler is responsible for performing syntax and semantic checks, generating bytecode instructions,
+and identifying errors in the code during the compilation process.
 
 
 **Q7.Explain the types of variables in Java?**
 
-Ans.
+Ans. In Java, there are three types of variables: local, instance, and static¹.
+
+1. **Local Variable**: 
+A variable declared inside the body of a method is called a local variable. 
+You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists. A local variable cannot be defined with the "static" keyword¹.
+
+2. **Instance Variable**:
+A variable declared inside the class but outside the body of a method is called an instance variable. 
+It is not declared as static. It is called an instance variable because its value is instance-specific and is not shared among instances.
+
+3. **Static Variable**: 
+A variable that is declared as static is called a static variable. It cannot be local. 
+You can create a single copy of the static variable and share it among all the instances of the class. 
+Memory allocation for static variables happens only once when the class is loaded in memory.
 
 
 **Q8.What are the Datatypes in Java?**
 
-Ans.
+Ans. In Java, there are two categories of data types: Primitive and Non-Primitive.
+
+- Primitive Data Types: 
+These are the most basic data types available in Java language. There are eight primitive data types in Java: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean` and `char`.
+
+- Non-Primitive Data Types: Also known as Object Data types, these include Classes, Interfaces, Arrays, and Strings.
 
 
 **Q9.What are the identifiers in java?**
 
-Ans.
+Ans. Identifiers in Java are symbolic names used for identification. 
+They can be a class name, variable name, method name, package name, constant name, and more. 
+However, there are some reserved words in Java that cannot be used as an identifier.
+For every identifier, there are some conventions that should be followed before declaring them.
 
 
 **Q10.Explain the architecture of JVM**
 
-Ans. 
+Ans. JVM (Java Virtual Machine) is an abstract machine that provides a runtime environment in which Java bytecode can be executed. JVMs are available for many hardware and software platforms, meaning that JVM is platform-dependent¹. The architecture of the JVM is divided into three main subsystems: ClassLoader Subsystem, Runtime Data Area, and Execution Engine².
+
+- **ClassLoader Subsystem**: 
+This subsystem is responsible for loading class files. Whenever a Java program is run, it is first loaded by the ClassLoader.
+There are three built-in ClassLoaders in Java: Bootstrap ClassLoader, Extension ClassLoader, and System/Application ClassLoader.
+- **Runtime Data Area**: 
+This area is divided into five major components: Method Area, Heap, Stack, Program Counter Register, and Native Method Stack.
+- **Execution Engine**: 
+This component is responsible for executing the bytecode that has been loaded into the memory by the ClassLoader subsystem.
