@@ -106,41 +106,108 @@ dog2.makeSound(); // Luna is a Golden Retriever and makes bark
 
 
 
-💡 **Q3.Write a program to show run time polymorphism in java?**
+//**Q3.Write a program to show run time polymorphism in java?**
 
-</aside>
+Ans.class Shape {
+    void draw() {
+        System.out.println("Drawing a shape");
+    }
+}
 
-<aside>
-💡 **Q4.Write a program to show Compile time polymorphism in java?**
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing a circle");
+    }
+}
 
-</aside>
+class Square extends Shape {
+    void draw() {
+        System.out.println("Drawing a square");
+    }
+}
 
-<aside>
-💡 **Q5. Achieve loose coupling in java by using OOPs  concept?**
+public class PolymorphismExample {
+    public static void main(String[] args) {
+        Shape shape = new Shape();
+        Shape circle = new Circle();
+        Shape square = new Square();
 
-</aside>
+        shape.draw(); // Drawing a shape
+        circle.draw(); // Drawing a circle
+        square.draw(); // Drawing a square
+    }
+}
 
-<aside>
-💡 **Q6. What is the benefit of encapsulation in java?**
 
-</aside>
 
-<aside>
-💡 **Q7.Is java a t 100% Object oriented Programming language? If no why ?**
+//**Q4.Write a program to show Compile time polymorphism in java?**
 
-</aside>
+Ans. Here is an example of a Java program that demonstrates compile-time polymorphism:
 
-<aside>
-💡 **Q8.What are the advantages of abstraction in java?**
+```java
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
 
-</aside>
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
 
-<aside>
-💡 **Q9.What is an abstraction explained with an Example?**
+public class PolymorphismExample {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.add(1, 2)); // 3
+        System.out.println(calculator.add(1, 2, 3)); // 6
+    }
+}
+```
 
-</aside>
 
-<aside>
-💡 **Q10.What is the final class in Java?**
+//**Q5. Achieve loose coupling in java by using OOPs  concept?**
 
-</aside>
+Ans. // Loose coupling is a design principle in object-oriented programming (OOP) that promotes the creation of components that are 
+    //independent and can be easily modified or replaced without affecting other components.
+    //This can be achieved in Java by using several OOP concepts, such as abstraction, encapsulation, and interfaces.
+
+
+//**Q6. What is the benefit of encapsulation in java?**
+
+Ans. // Encapsulation is one of the fundamental principles of object-oriented programming, and it provides several benefits in Java:
+    //1. Data Hiding:
+    //2. Modularity and Maintainability:
+    //3. Code Flexibility:
+    //4. Easy Debugging and Testing: 
+
+//**Q7.Is java a t 100% Object oriented Programming language? If no why ?**
+
+Ans.
+
+
+//**Q8.What are the advantages of abstraction in java?**
+
+Ans.//Increasing Understandability of the Code
+//Improving Flexibility
+//Promoting Code Reusability
+//Improving Maintainability of the Application
+//Increasing Security of an Application or Program
+
+
+//**Q9.What is an abstraction explained with an Example?**
+
+Ans.//No, Java is not a completely object-oriented language. 
+    //It supports the four pillars of OOPs (Object-Oriented Programming) which are Inheritance, Encapsulation, Polymorphism, and Abstraction. 
+    //However, it is not 100% object-oriented due to the following reasons:
+
+//Existence of Primitive data types: It’s data that’s not an object and has no properties or any methods.
+//Static methods and variables: They belong to the class and not to the instance of the class.
+//Final keyword: It is used to restrict the user from modifying the value of a variable.
+
+
+//**Q10.What is the final class in Java?**
+
+Ans. //A final class in Java is a class that cannot be extended. 
+    //As the name suggests, the final keyword is used for its declaration.
+    //We can only create a final class if it is complete in nature, which means it cannot be an abstract class. 
+    //A final class can extend other classes; It can be a subclass but not a superclass. When creating an immutable class, the final class is the best answer.
