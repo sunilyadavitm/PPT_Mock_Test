@@ -1,48 +1,67 @@
 ****Q1.What is the Spring MVC framework?****
 
-Ans. 
+Ans. The Spring MVC framework is a popular web application framework that is part of the Spring Framework.
+It provides a Model-View-Controller (MVC) architecture and components for building flexible and loosely coupled web applications.
 
-<aside>
-💡 ****Q2.What are the benefits of Spring MVC framework over other MVC frameworks?****
+Spring MVC is built on top of the Spring Framework's core features, such as dependency injection and inversion of control, 
+which makes it easy to integrate with other Spring modules and technologies. 
+It provides a powerful and flexible foundation for building web applications, with support for features such as data binding, validation, internationalization, and more.
 
-</aside>
+The Spring MVC framework is highly configurable and extensible, allowing you to customize its behavior to meet the needs of your application.
+It also provides a rich set of tools and libraries for building web applications, including support for RESTful web services, JSON and XML serialization, and more.
 
-<aside>
-💡 ****Q3.What is DispatcherServlet in Spring MVC? In other words, can you explain the Spring MVC architecture?****
 
-</aside>
 
-<aside>
-💡 ****Q4.What is a View Resolver pattern and explain its significance in Spring MVC?****
 
-</aside>
+****Q2.What are the benefits of Spring MVC framework over other MVC frameworks?****
 
-<aside>
-💡 ****Q5.What are the differences between @RequestParam and @PathVariable annotations?****
+Ans. The string constant pool is a special memory area in the heap where the JVM stores string literals. 
+When a string literal is created, the JVM checks if an identical string already exists in the pool. If it does, the JVM returns a reference to the existing string. 
+If not, the JVM creates a new string object in the pool and returns a reference to it.
 
-</aside>
+The string constant pool is part of the heap memory, which is used for dynamic memory allocation and stores objects at runtime. 
+The heap allows global access to data, meaning that data stored in the heap is available to all threads during the lifetime of the application.
 
-<aside>
-💡 ****Q6.What is the Model in Spring MVC?****
 
-</aside>
+****Q3.What is DispatcherServlet in Spring MVC? In other words, can you explain the Spring MVC architecture?****
 
-<aside>
-💡 ****Q7.What is the role of @ModelAttribute annotation?****
+Ans. The DispatcherServlet is highly configurable and supports a wide range of features, such as view resolution, locale and theme resolution, file uploading, and more. 
+It provides a flexible and powerful foundation for building web applications with Spring MVC
 
-</aside>
+In the Spring MVC architecture, the DispatcherServlet plays a central role.
+It receives incoming requests and uses configurable handler mappings to determine which handler should process the request. 
+The handler, typically a controller, processes the request and returns a ModelAndView object that contains the model data and the name of the view to be rendered. 
+The DispatcherServlet then uses a view resolver to determine the appropriate view to render the response
 
-<aside>
-💡 ****Q8.What is the significance of @Repository annotation?****
+****Q4.What is a View Resolver pattern and explain its significance in Spring MVC?****
 
-</aside>
+Ans.
 
-<aside>
-💡 **Q9.What does REST stand for? and what is RESTful web services?**
 
-</aside>
+****Q5.What are the differences between @RequestParam and @PathVariable annotations?****
 
-<aside>
-💡 **Q10.What is differences between RESTful web services and SOAP web services**
+Ans.
 
-</aside>
+
+****Q6.What is the Model in Spring MVC?****
+
+Ans.
+
+
+****Q7.What is the role of @ModelAttribute annotation?****
+
+Ans.
+
+****Q8.What is the significance of @Repository annotation?****
+
+Ans.
+
+
+**Q9.What does REST stand for? and what is RESTful web services?**
+
+Ans.
+
+
+**Q10.What is differences between RESTful web services and SOAP web services**
+
+Ans.
