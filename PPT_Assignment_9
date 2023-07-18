@@ -7,44 +7,89 @@ Ans. The Spring Framework is an open-source Java platform that provides comprehe
 
 ****Q2.What are the features of Spring Framework?****
 
-Ans.
+Ans.features of Spring Framework.
+1. Inversion of Control (IoC) / Dependency Injection (DI):
+2. Aspect-Oriented Programming (AOP):
+3. Spring MVC:
+4. Data Access and Integration:
+5. Transaction Management: and etc.
 
 
 ****Q3.What is a Spring configuration file?****
 
-Ans.
+Ans. In Spring Framework, a configuration file is used to define the configuration and settings for a Spring application. 
+It specifies how the various components of the application should be created, wired together, and managed by the Spring container.
 
 
 ****Q4.What do you mean by IoC Container?****
 
-Ans.
-
+Ans. IoC (Inversion of Control) Container, also known as the Spring container, is a core component of the Spring Framework. 
+It is responsible for managing the lifecycle and configuration of objects (also called beans) within a Spring application.
+The IoC container implements the principle of Inversion of Control, 
+where the control over the creation and management of objects is transferred from the application code to the container. 
+Instead of explicitly creating objects and managing their dependencies, the container takes care of these tasks based on the configuration provided.
 
 ****Q5.What do you understand by Dependency Injection?****
 
-Ans.
+Ans. Dependency Injection (DI) is a design pattern and a core concept in software development,
+where the dependencies of a class are provided externally rather than being created or managed by the class itself. 
+In other words, instead of a class creating its own dependencies, the dependencies are "injected" into the class from an external source.
 
 
 ****Q6.Explain the difference between constructor and setter injection?****
 
-Ans.
+Ans. Setter Injection:
+Dependencies are provided through setter methods of the class.
+The class provides setter methods for each dependency, typically named in a "setXxx()" convention.
+The dependencies can be set or changed at any time after the object is created.
+
+Constructor Injection:
+Dependencies are provided through the class constructor.
+The class declares its dependencies as parameters in the constructor.
+The dependencies are typically passed in when creating an instance of the class.
 
 
 ****Q7.What are Spring Beans?****
 
-Ans.
+Ans. In the context of the Spring Framework, a Spring Bean is an object that is managed by the Spring IoC (Inversion of Control) container. 
+It is an instance of a class that is created, configured, and managed by the container based on the Spring configuration.
+
+Spring Beans play a central role in the Spring Framework as they are the key building blocks of an application. 
+They are created by the Spring container, which manages their lifecycle, dependencies, and configuration. 
+Spring Beans can represent various components of an application, 
+such as services, repositories, controllers, or any other class that needs to be managed by the container.
 
 
 ****Q8.What are the bean scopes available in Spring?****
 
-Ans.
+Ans. scopes in Spring:
+Singleton:
+1.Default scope in Spring.
+2.Only one instance of the bean is created and shared within the container.
+
+Prototype:
+1.Each request for the bean creates a new instance.
+
+Request:
+1.A new instance of the bean is created for each HTTP request in a web application.
+
+Session:
+1.A new instance of the bean is created for each user session in a web application.
 
 
 ****Q9.What is Autowiring and name the different modes of it?****
 
-Ans.
-
+Ans. Autowiring is a feature of the Spring Framework that allows automatic resolution and injection of dependencies into Spring beans. With autowiring, 
+the Spring container automatically detects the dependencies required by a bean and attempts to satisfy them by looking up other beans from the container.
+different modes of Autowiring:
+1. No Autowiring (default):
+2.by type
+3.Constructor Autowiring:
+4.by annotation
 
 **Q10.Explain Bean life cycle in Spring Bean Factory Container.**
 
-Ans.
+Ans. In the Spring Framework, the life cycle of a bean managed by a BeanFactory container consists of several distinct stages, 
+starting from its creation to its destruction. Understanding the bean life cycle is crucial for customizing the initialization and destruction processes of beans.
+During the bean life cycle, several callback methods can be implemented to customize the behavior at different stages, such as post-processors, 
+initialization callbacks, and destruction callbacks. These callbacks allow for fine-grained control over the initialization and destruction processes of beans.
