@@ -1,52 +1,109 @@
 **Q1.What is the use of JDBC in java?**
 
-Ans.
+Ans. JDBC stands for Java Database Connectivity. 
+It is an API (Application Programming Interface) that allows Java programs to access databases. 
+JDBC provides a standard interface for accessing relational databases, such as MySQL, Oracle,
+and SQL Server, from Java programs. It provides methods for querying and updating data in a database, as well as for managing transactions and handling errors.
+
 
 
 **Q2.What are the steps involved in JDBC?**
 
-Ans.
+Ans. The following are the steps involved in JDBC:
+
+1. Import the packages: Requires that you include the packages containing the JDBC classes needed for database programming.
+2. Register the JDBC driver: Requires that you initialize a driver so you can open a communication channel with the database.
+3. Open a connection: Requires that you establish a connection with the database.
+4. Execute a query: Requires that you create an object of type Statement or PreparedStatement and execute a SQL query.
+5. Extract data from result set: Requires that you use ResultSet object to retrieve data from the query result.
+6. Clean up the environment: Requires that you explicitly close all database resources versus relying on the JVM's garbage collection .
+
+
 
 
 **Q3.What are the types of statement in JDBC in java?**
 
-Ans.
+Ans. There are three types of statements in JDBC:
+
+1. Statement: Used to implement simple SQL statements with no parameters.
+2. PreparedStatement: Used for precompiling SQL statements that might contain input parameters.
+3. CallableStatement: Used to execute stored procedures.
+
 
 
 **Q4.What is Servlet in Java?**
 
-Ans.
+Ans. A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications
+accessed by means of a request-response programming model. Although servlets can respond to any type of request,
+they are commonly used to extend the applications hosted by web servers. 
+Servlets are the Java programs that run on the Java-enabled web server or application server. 
+
 
 
 **Q5.Explain the life Cycle of servlet?**
 
-Ans.
+Ans. The life cycle of a servlet is managed by the container in which the servlet has been deployed. The life cycle of a servlet is as follows:
+
+1. Loading the Servlet class
+2. Creating an instance of the Servlet
+3. Initializing the Servlet
+4. Servicing the request
+5. Destroying the Servlet
 
 
 **Q6.Explain the difference between the RequestDispatcher.forward() and HttpServletResponse.sendRedirect() methods?**
 
-Ans.
+Ans. The difference between the RequestDispatcher.
+forward() and HttpServletResponse.sendRedirect() methods is that the forward() method sends the request to another resource on the server, 
+while the sendRedirect() method sends the request to a different URL.
 
 
 
 **Q7.What is the purpose of the doGet() and doPost() methods in a servlet?**
 
-Ans.
-
+Ans. The purpose of the doGet() and doPost() methods in a servlet is to handle HTTP GET and POST requests, respectively.
+The doGet() method is used to handle HTTP GET requests, while the doPost() method is used to handle HTTP POST requests. 
 
 
 **Q8.Explain the JSP Model-View-Controller (MVC) architecture.**
 
-Ans.
+Ans. The Model-View-Controller (MVC) architecture is a design pattern used to separate the concerns of an application
+into three interconnected components: the model, the view, and the controller. 
+The model represents the data and business logic of the application, the view represents the user interface,
+and the controller handles user input and updates the model and view accordingly. 
 
 
 
 ****Q9.What are some of the advantages of Servlets?****
 
-Ans.
+Ans. Some of the advantages of Servlets include:
+
+1. Better performance: Servlets execute within the address space of a Web server, so it is not necessary to create a separate process to handle each client request. 
+This makes performance significantly better than CGI.
+2. Portability: Servlets are written in Java, making them highly portable crosswise operating systems and server implementations.
+3. Robust: JVM manages Servlets, so we don't need to worry about the memory leak, garbage collection, etc.
+4. Secure: Servlets use Java language, making them secure.
+5. Powerful: Servlets can handle several things which were difficult or sometimes impossible to do with CGI.
+6. Efficiency
+7. Integration
+8. Extensibility
+9. Inexpensive¹³⁴⁵.
+
 
 
 
 **Q10.What are the limitations of JSP?**
 
-Ans.
+Ans. JSP (JavaServer Pages) is a technology used to create dynamic web pages using Java. While JSP has many advantages, there are also some limitations:
+
+1. Complexity: JSP can be more complex than other web technologies, such as HTML or PHP.
+
+2. Performance: JSP pages can be slower to load than other web technologies.
+
+3. Security: JSP pages can be vulnerable to security threats, such as cross-site scripting (XSS) attacks.
+
+4. Limited functionality: JSP has limited functionality compared to other web technologies, such as JavaScript.
+
+5. Steep learning curve: JSP can have a steep learning curve for beginners.
+
+  
