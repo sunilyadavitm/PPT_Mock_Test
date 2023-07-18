@@ -1,26 +1,59 @@
 ****Q1.What is ORM in Hibernate?****
 
-Ans.
+Ans. ORM stands for Object-Relational Mapping. 
+It is a programming technique that maps the object-oriented domain model to the relational database model. 
+Hibernate is an ORM tool that provides a framework for mapping an object-oriented domain model to a relational database.
+
+Hibernate ORM is an open-source project that provides an object-relational mapping (ORM) framework for the Java programming language. 
+Hibernate's primary feature is mapping from Java classes to database tables, and mapping from Java data types to SQL data types.
+Hibernate also provides data query and retrieval facilities.
+
 
 
 ****Q2.What are the advantages of Hibernate over JDBC?****
 
-Ans.
+Ans.Hibernate is an ORM tool that provides a framework for mapping an object-oriented domain model to a relational database.
+It has several advantages over JDBC:
+
+- Hibernate is database independent, which means it can work with any database.
+- Hibernate provides a simple API for storing and retrieving Java objects directly to and from the database.
+- Hibernate provides transparent persistence, which means that the application does not need to know how the data is stored in the database.
+- Hibernate provides caching support, which can improve performance by reducing the number of database queries.
+- Hibernate provides support for lazy loading, which means that data is loaded only when it is needed.
+
+  
 
 
 ****Q3.What are some of the important interfaces of Hibernate framework?****
 
-Ans.
+Ans. Hibernate framework provides several interfaces that are important for its functioning. Some of the important interfaces of Hibernate framework are:
+
+- SessionFactory: It is an interface that provides a factory for creating Session objects.
+- Session: It is an interface that provides methods for querying and manipulating the database.
+- Transaction: It is an interface that provides methods for managing transactions.
+- Query: It is an interface that provides methods for executing HQL (Hibernate Query Language) queries.
+- Criteria: It is an interface that provides methods for creating criteria queries.
+
 
 
 ****Q4.What is a Session in Hibernate?****
 
-Ans.
+Ans. A Session in Hibernate is a lightweight object that represents a single unit of work with the database. It provides methods for querying and manipulating the database.
+A Session is used to create, read, update, and delete persistent objects. It also provides transaction management and caching support.
 
+A SessionFactory is used to create Session objects. A SessionFactory is a thread-safe object that should be created only once during the application's lifetime.
+
+  
 
 ****Q5.What is a SessionFactory?****
 
-Ans.
+Ans.A SessionFactory in Hibernate is a thread-safe object that is used to create Session objects. 
+It is an expensive object that should be created only once during the application's lifetime. 
+A SessionFactory is responsible for initializing Hibernate's internal state and providing a factory for creating Session objects.
+
+A SessionFactory is created by passing a Configuration object to its constructor.
+The Configuration object contains information about the database connection and the mapping between Java classes and database tables.
+
 
 
 ****Q6.What is HQL?****
